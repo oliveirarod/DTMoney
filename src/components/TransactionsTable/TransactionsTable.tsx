@@ -30,8 +30,8 @@ export const TransactionsTable: React.FC = () => {
           </tr>
           <tr>
             <td>Mercado</td>
-            <td className="withdraw">- R$12.000</td>
-            <td>Desenvolvimento</td>
+            <td className="withdraw">- R$1.100</td>
+            <td>Alimentação</td>
             <td>20/02/2021</td>
           </tr>
         </tbody>
