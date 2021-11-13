@@ -1,11 +1,9 @@
-import React from 'react';
-
 import { Container } from './DashboardStyles'
 
 import { Summary } from '../Summary/Summary';
 import { TransactionsTable } from '../TransactionsTable/TransactionsTable';
 
-export const Dashboard: React.FC = () => {
+export function Dashboard() {
   return (
   <Container>
     <Summary />

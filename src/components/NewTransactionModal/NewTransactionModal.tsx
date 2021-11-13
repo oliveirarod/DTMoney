@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal'
 import { useTransactions } from '../../hooks/useTransactions';
 
@@ -15,7 +15,7 @@ interface NewTransactionModalProps {
   onRequestClose: () => void;
 }
 
-export const NewTransactionModal: React.FC<NewTransactionModalProps> = ({ isNewTransactionModalOpen, onRequestClose }) => {
+export function NewTransactionModal({ isNewTransactionModalOpen, onRequestClose }: NewTransactionModalProps) {
   const { createTransaction } = useTransactions();
 
   const [title, setTitle] = useState('');

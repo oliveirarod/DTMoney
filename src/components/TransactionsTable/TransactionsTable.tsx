@@ -1,10 +1,8 @@
-import React from 'react';
-
 import { useTransactions } from '../../hooks/useTransactions';
 
 import { Container } from './TransactionsTableStyles';
 
-export const TransactionsTable: React.FC = () => {
+export function TransactionsTable() {
   const { transactions } = useTransactions();
 
   return (

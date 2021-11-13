@@ -1,14 +1,12 @@
-import React from 'react';
-
-import {  useTransactions } from '../../hooks/useTransactions';
-
-import { Container } from './SummaryStyles';
+import { useTransactions } from '../../hooks/useTransactions';
 
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import totalImg from '../../assets/total.svg';
 
-export const Summary: React.FC = () => {
+import { Container } from './SummaryStyles';
+
+export function Summary() {
   const { transactions } = useTransactions();
 
   const summary = transactions.reduce((acc, transaction) => {

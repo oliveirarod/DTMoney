@@ -1,5 +1,3 @@
-import React from 'react'
-
 import logoImg from '../../assets/logo.svg'
 import { Container, Content } from './HeaderStyles'
 
@@ -7,7 +5,7 @@ interface HeaderProps {
   onOpenNewTransactionModal: () => void;
 }
 
-export const Header:React.FC<HeaderProps> = ({ onOpenNewTransactionModal }) => {
+export function Header({ onOpenNewTransactionModal }: HeaderProps) {
   return (
     <Container>
       <Content>
