@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   table {
     width: 100%;
@@ -34,5 +34,10 @@ export const Container = styled.div`
         color: var(--red);
       }
     }
+  }
+
+  @media(max-width: 600px) {
+    overflow-x: auto;
+    white-space: nowrap
   }
 `

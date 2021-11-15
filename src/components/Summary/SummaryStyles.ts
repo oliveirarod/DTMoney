@@ -1,10 +1,23 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.main`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: -6.5rem;
+  grid-template-rows: repeat(3, 1fr);
+
+  @media (max-width: 886px) {
+    justify-content: center;
+
+    div {
+      width: 80vw;
+    }
+  }
+  
+  @media (min-width: 887px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+  }
 
   div {
     background-color: var(--shape);
